@@ -28,8 +28,13 @@
   cursor: pointer;
 }
 .container1{
-  height: 600px;
-  background-image: url("https://cliniquego.com/2016/wp-content/uploads/2016/12/Soins_infirmiers_domicile_Montreal_Laval_Longueuil.jpg");
+  height: 500px;
+}
+.container{
+  position: relative;
+  bottom:70px;
+  /* background-image: url("https://cliniquego.com/2016/wp-content/uploads/2016/12/Soins_infirmiers_domicile_Montreal_Laval_Longueuil.jpg"); */
+  background-image:url("http://static.wixstatic.com/media/158792_44d45954591b4188bacab09a6eee711b~mv2.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -40,31 +45,32 @@
 }
 .searchItem{
   display:flex;
+  position:relative;
+  left:50px;
 }
-input{
-  width:2000px;
-}
-.searchItem ul li{
-  text-decoration: none;
+.inputSearch{
+  width:350px;
 }
 .box{
   border-radius:8px;
-  border:0.5px solid rgba(255, 255, 255, 0.7);
+  border:0.5px solid rgba(255, 255, 255, 0.8);
   border-color: rgba(255, 255, 255, 0.7);
-  background-color: rgba(255, 255, 255, 0.7); 
+  background-color: rgba(255, 255, 255, 0.8); 
   height:100px;
   width:600px;
   text-align:center;
+  position: relative;
+  right:15px;
 }
 h2{
   color:#4f4e4e;
   font-size: 30px;
 }
 .inscription-gratuite{
-  margin-left: 200px;
+  margin-left: 170px;
 }
 .btn{
-  width:600px;
+  width:500px;
   height:45px;
   background: #00748f;
   font-size: 25px;
@@ -211,7 +217,7 @@ h2{
   text-decoration: none;
   display: flex;
   justify-content: space-between;
-  box-shadow: 0 1px 4px #4f4e4e;
+  box-shadow: 0 1px 4px #4f4e4e; 
   margin: 0px;
   height: 70px;
   align-items: baseline;
@@ -246,7 +252,7 @@ h2{
   text-decoration: none;
   font-weight: bold;
   color: rgb(87, 85, 85);
-
+  
 }
 .label{
   padding-top:26px;
@@ -269,7 +275,6 @@ h2{
 .navbar label:hover, .dropdown:hover .dropbtn {
   background-color: #33bfe0;
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -296,6 +301,16 @@ h2{
 .dropdown:hover .dropdown-content {
   display: block;
 }
+.headerbtn{
+  height:150px;
+}
+.btnheader{
+  position: relative;
+  top:10px;
+}
+.headerbtn :focus{
+  color:red;
+}
 /********************Inscrire.js***************************/
 .body-inscrire{
   font-family: Arial, Helvetica, sans-serif;
@@ -321,7 +336,7 @@ h2{
   padding:15px;
   height: 23px;
   width:570px;
-margin:0px;
+  margin:0px;
 }
 .Inscription-par-fb{
   margin:30px 0px 0px 0px;

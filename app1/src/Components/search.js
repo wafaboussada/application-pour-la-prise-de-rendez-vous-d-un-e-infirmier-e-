@@ -9,10 +9,9 @@ class Search extends Component {
             <div className='box'>
                 <h2>Cherchez près de chez vous</h2>
                 <div className="searchItem">
-    <div >
+    
         <span><i className="fa fa-search text-white" ></i></span>
-    </div>
-    <input onChange={(event)=>this.props.onChangeVille(event)} type="text" placeholder="Ville" /></div></div>
+    <input className="inputSearch" onChange={(event)=>this.props.onChangeVille(event)} type="text" placeholder="Ville" /></div></div>
     <ul>{
        this.props.tabVilles.filter(x=>{
         return this.props.value.trim() && x.toLowerCase().includes(this.props.value.toLowerCase())

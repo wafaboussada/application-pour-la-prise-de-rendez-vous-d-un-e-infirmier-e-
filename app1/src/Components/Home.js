@@ -3,6 +3,7 @@ import Search from './search';
 import Services from './Services';
 import ServicesClients from './ServicesClients';
 import Maps from './Maps';
+import Header from './Header';
 
 
 
@@ -52,7 +53,10 @@ class Home extends Component {
          return <li>{x}</li>
        })
      }</ul> */}
+        <div className="container">
+        <Header/>
         <Search onChangeVille={this.onChangeVille} tabVilles={this.state.tabVilles} value={this.state.value}/>
+        </div>
         <ServicesClients/>
         <Services/>
         <Maps/>

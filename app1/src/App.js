@@ -21,7 +21,13 @@ class App extends Component {
       MotDePasse:"",
       isAlert:true,
       contact:[],
+      value:'',
     }
+  }
+  onChangeVille=(event)=>{
+    this.setState({
+      value:event.target.value
+    })
   }
 
   changeprénom=(event)=>{
@@ -100,7 +106,8 @@ class App extends Component {
       <div>
         <Route exact path="/"component={Home} />
         <div>
-        <Route exact path="/Components/InfirmierList" component={InfirmierList} />
+        <Route exact path="/Components/InfirmierList" render={(props)=><InfirmierList contact={this.state.contact} 
+        value={this.state.value} onChangeVille={this.onChangeVille}/>}/>
         <Route exact path="/ConseilsPatients" component={ConseilsPatients} />
         </div>
         <div>

@@ -28,8 +28,8 @@ class Header extends Component {
                  </div>  
                  </div>
                  <div className="dropdown drop-right">
-                   <label className="label">  <Link className="dropdown-item" to='/Components/Inscrire'>S'inscrire</Link></label>
-                   <label className="label">  <Link className="dropdown-item" to='/Components/Connexion' >Connexion</Link></label>
+                   <label className="label headerbtn">  <Link className="dropdown-item btnheader" to='/Components/Inscrire'>S'inscrire</Link></label>
+                   <label className="label headerbtn">  <Link className="dropdown-item btnheader" to='/Components/Connexion' >Connexion</Link></label>
                  </div>
                </div>
             </div> 
