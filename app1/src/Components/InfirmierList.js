@@ -182,14 +182,6 @@ class InfirmierList extends Component {
 
             </div></div>
             <div>
-                <Map google={this.props.google} zoom={14}>
-                   <Marker onClick={this.onMarkerClick} name={'Current location'}/>
-                   <InfoWindow onClose={this.onInfoWindowClose}>
-                   <div>
-                       <h1>{this.state.selectedPlace.name}</h1>
-                   </div>
-                   </InfoWindow>
-                </Map>
       <p className="Infirmiers">Tous les infirmier(e)s</p>
        <img src="https://www.google.com/maps/d/thumbnail?mid=1EnSWY68ofI5qFt05NcNFeq1O_n8&hl=en"/>
    </div>
@@ -197,7 +189,4 @@ class InfirmierList extends Component {
         )
     }
 }
-// export default InfirmierList; 
-export default GoogleApiWrapper({
-    apiKey:("YOUR_GOOGLE_API_KEY_GOES_HERE")
-})(InfirmierList)
+export default InfirmierList; 
