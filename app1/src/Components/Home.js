@@ -4,26 +4,31 @@ import Services from './Services';
 import ServicesClients from './ServicesClients';
 import Maps from './Maps';
 import Header from './Header';
+import Footer from './Footer';
 
 
 
 class Home extends Component {
-  constructor(props){
-    super(props)
-    this.state={
-        tabVilles:['Ariana','Béja','BenArous','Bizerte','Gabès','Gafsa','Jendouba','Kairouan','Kasserine','Kébili','Kef','Mahdia','Manouba','Médenine',
-          'Monastir','Nabeul','Sfax','SidiBouzid','Siliana','Sousse','Tataouine','Tozeur','Tunis','Zaghouan'
-          ],
-          value:'',
+  // constructor(props){
+  //   super(props)
+  //   this.state={
+  //       tabVilles:['Ariana','Béja','BenArous','Bizerte','Gabès','Gafsa','Jendouba','Kairouan','Kasserine','Kébili','Kef','Mahdia','Manouba','Médenine',
+  //         'Monastir','Nabeul','Sfax','SidiBouzid','Siliana','Sousse','Tataouine','Tozeur','Tunis','Zaghouan'
+  //         ],
+  //         value:'',
           
 
     
-  }}
-  onChangeVille=(event)=>{
-    this.setState({
-      value:event.target.value
-    })
+  // }}
+  filtersearch=(event)=>{
+    this.props.value=event.target.value[0]
   }
+  // onChangeVille=(event)=>{
+  //   this.setState({
+  //     value:event.target.value
+  //   })
+  // }
+  
   // changeVille = (event)=>{
   //   this.setState({
   //     value:event.target.value
@@ -54,12 +59,16 @@ class Home extends Component {
        })
      }</ul> */}
         <div className="container">
+        {console.log(this.props.value)}
         <Header/>
-        <Search onChangeVille={this.onChangeVille} tabVilles={this.state.tabVilles} value={this.state.value}/>
+        {/* <Search  filtersearch = {this. filtersearch} onChangeVille={this.onChangeVille} tabVilles={this.state.tabVilles} value={this.state.value}/>
+       */}
+       <Search onChangeVille={this.props.onChangeVille} value={this.props.value} tabVilles={this.props.tabVilles} />
         </div>
         <ServicesClients/>
         <Services/>
         <Maps/>
+        <Footer/>
           
       </div>
     );

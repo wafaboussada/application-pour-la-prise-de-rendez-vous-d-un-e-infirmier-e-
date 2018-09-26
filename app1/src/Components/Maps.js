@@ -1,10 +1,12 @@
 import React, {Component}  from 'react';
+import img from './img.svg';
 class Maps extends Component {
   render() {
     return (
         <div className="Maps-party">
            <div className="maps-img">
-               <img className="maps"  src="https://cdn.logitravel.fr/cloudcontent/fotos/tours/maps/40459/305x214_4944522694.jpg"  alt="maps"/>
+               <img src={img} width="5000px" height="450px;"/>
+               {/* <img className="maps"  src="https://cdn.logitravel.fr/cloudcontent/fotos/tours/maps/40459/305x214_4944522694.jpg"  alt="maps"/> */}
            </div>
            <div className="maps-decription">
                <h1 className="maps-info">Il y a toujours un(e) infirmier(e) à proximité de chez vous</h1>

@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import {Link} from'react-router-dom'
-
+import logo from './logo.svg';
+import logoimg from './logoimg.svg';
 class Header extends Component {
     render() {
         return (
           <div>
             <div>
               <div className="navbar">
+              <img  src={logo} width="70px"/>
                <div className="drop-left">
                 <div className="dropdown">
                   <button className="dropbtn">Recherchez une infirmière
