@@ -7,7 +7,7 @@ class Footer extends Component {
           <div className="service-section-left">
              <div className="service-logo">
               <a href="https://">
-               <img src={logo} width="100px"alt=""/>
+               <img src={logo} width="150px"alt=""/>
               </a>
              </div>
              <h4 className="service-parag">Suivez-nous sur :</h4>

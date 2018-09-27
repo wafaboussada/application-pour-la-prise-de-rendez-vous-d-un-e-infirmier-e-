@@ -64,9 +64,10 @@ class App extends Component {
     })
   }
   changedate=(event)=>{
+    if(event.target.value.substr(1,4)%1000>=1){
     this.setState({
       date:event.target.value
-    })
+    })}
   }
   onChangeVille1=(event)=>{
     this.setState({

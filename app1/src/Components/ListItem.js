@@ -9,20 +9,25 @@ class ListItem extends Component{
         </div>
           <div>
               <div className="nom-prenom">
-          <div className="movie-description">{this.props.Prénom}</div>
-          <div className="movie-description">{this.props.Nom} </div></div>
-          <div className="movie-description">{this.props.sexe}</div>
-          <div>
-              {this.props.ville}
-              {this.props.gouvernorat}
+          <div className="listitemdescription">{this.props.Prénom}</div>
+          <div className="listitemdescription">{this.props.Nom} </div></div>
+          <div className="listitemdescription">{this.props.sexe}</div>
+          <div className="gouvernoratvilleiconsearch">
+          <i class="fas fa-map-marker-alt icongouvernoratvilleiconsearch"></i>
+          <div className="gouvernoratville">
+              <div className="listitemdescription">{this.props.ville}</div>
+              <div className="listitemdescription">{this.props.gouvernorat}</div>
+          </div>
           </div>
           <div className="movie-description">{this.props.Mail} </div>
           
-          <div>Date de naissance:{this.props.date}</div>
-          <div>{this.props.experience}ans d'expérience</div>
-          <div>Taux moyenne pour une visite(Dt):{this.props.taux}</div>
+          {/* <div>Date de naissance:{this.props.date}</div> */}
+          <div className="experience">Expérience:{this.props.experience}</div>
+          <div className="taux">Taux moyenne pour une visite(Dt):{this.props.taux}</div>
           <div>{this.props.jours}
-          </div></div>
+          </div>
+          <button className="btncontact">Contacter</button>
+          </div>
         </div>
         
       

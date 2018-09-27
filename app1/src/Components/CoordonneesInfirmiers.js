@@ -19,7 +19,7 @@ class CoordonneesInfirmiers extends Component {
                              <label  className="label-section">Sexe</label>
                          </div>
                            <div className="right-cordonnees-item">
-                             <input className="input-section" placeholder="Entrer votre adresse" onChange={(event) => this.props.changeAdresse(event)} ></input>
+                             <input className="input-section" placeholder="Entrer votre adresse"  ></input>
                              <select className="input-section option-color" onChange={(event)=>this.props.changegouvernorat(event)} >
                                 <option value="Ariana">Ariana</option>
                                 <option value="Béja">Béja</option>

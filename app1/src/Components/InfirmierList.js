@@ -91,6 +91,8 @@ import React, { Component } from 'react';
 import {Map,InfoWindow, Marker, GoogleApiWrapper} from 'google-map-react';
 import {Link} from'react-router-dom';
 import ListItem from './ListItem';
+import MapItem, { MapContainer } from './googlemap';
+
 
 
 class InfirmierList extends Component {
@@ -159,7 +161,7 @@ class InfirmierList extends Component {
                             </div></div>
                        </div>
                        <div>
-                       {console.log(this.props.photoprofil)}
+                       {console.log(this.props.date)}
                            <h1>Trouver un ou une infirmière</h1>
                            <p className="rechercheinfimières">Vous cherchez un(e) infirmièr(e) à domicile de confiance? AlloFermli(ya) a un large aperçu 
                                des différents infirmièrs, avec 21.278 infirmièr(e)s disponibles pour vos critères de recherche. 
