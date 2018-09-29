@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Link} from'react-router-dom'
+import {Link} from'react-router-dom';
 import logo from './logo.svg';
 import logoimg from './logoimg.svg';
 class Header extends Component {
@@ -8,7 +8,7 @@ class Header extends Component {
           <div>
             <div>
               <div className="navbar">
-              <img  src={logo} width="70px"/>
+              <Link to="/"><img  src={logo} width="70px"/></Link>
                <div className="drop-left">
                 <div className="dropdown">
                   <button className="dropbtn">Recherchez une infirmière

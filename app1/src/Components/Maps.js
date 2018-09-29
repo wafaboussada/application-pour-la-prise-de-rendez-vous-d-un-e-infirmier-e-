@@ -5,7 +5,7 @@ class Maps extends Component {
     return (
         <div className="Maps-party">
            <div className="maps-img">
-               <img src={img} width="5000px" height="450px;"/>
+               <img src={img} width="6000px" height="500px;"/>
                {/* <img className="maps"  src="https://cdn.logitravel.fr/cloudcontent/fotos/tours/maps/40459/305x214_4944522694.jpg"  alt="maps"/> */}
            </div>
            <div className="maps-decription">

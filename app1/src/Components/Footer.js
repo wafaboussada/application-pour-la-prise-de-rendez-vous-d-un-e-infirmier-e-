@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from'react-router-dom';
 import logo from './logo.svg';
 class Footer extends Component {
     render() {
@@ -7,7 +8,7 @@ class Footer extends Component {
           <div className="service-section-left">
              <div className="service-logo">
               <a href="https://">
-               <img src={logo} width="150px"alt=""/>
+               <Link to="/"><img src={logo} width="150px"alt=""/></Link>
               </a>
              </div>
              <h4 className="service-parag">Suivez-nous sur :</h4>

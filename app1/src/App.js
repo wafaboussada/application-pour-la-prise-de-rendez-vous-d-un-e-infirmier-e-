@@ -43,6 +43,7 @@ class App extends Component {
       this.setState({
         [e.target.name]:[...this.state.jours,e.target.value]
     })
+   
   }
   handleSubmittemps=(e)=>{
     this.setState({
@@ -71,7 +72,7 @@ class App extends Component {
   }
   onChangeVille1=(event)=>{
     this.setState({
-      value1:event.target.value
+      value1:event.target.value,
     })
   }
   
@@ -173,7 +174,8 @@ class App extends Component {
   }
   onChangeVille=(event)=>{
     this.setState({
-      value:event.target.value
+      value:event.target.value,
+      value1:this.state.value
     })
   }
   
@@ -190,7 +192,7 @@ class App extends Component {
         <Route exact path="/" render={(props)=><Home onChangeVille={this.onChangeVille} value={this.state.value} tabVilles={this.state.tabVilles} />} />
         <div>
         <Route exact path="/Components/InfirmierList" render={(props)=><InfirmierList contact={this.state.contact} 
-        value1={this.state.value1} onChangeVille1={this.onChangeVille1}/>}/>
+        value1={this.state.value1} onChangeVille1={this.onChangeVille1} jours={this.state.jours}/>}/>
         <Route exact path="/ConseilsPatients" component={ConseilsPatients} />
         </div>
         <div>
@@ -226,7 +228,7 @@ class App extends Component {
           experience={this.state.experience}
           taux={this.state.taux}
           disponibilité={this.state.disponibilite}
-          jours={this.state.jours}
+          
           
           
           submit1={this.submit1}/>

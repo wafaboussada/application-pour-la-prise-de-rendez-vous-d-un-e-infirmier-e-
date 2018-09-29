@@ -117,7 +117,7 @@ class InfirmierList extends Component {
       taux="non indiqué",
       disponibilité="",
       sexe="",
-      jours=[],
+      jours={},
       photoprofil="https://fr-fr.roomlala.com/prod/file/welchome/image/icones/profil-big.png"
       }=contact
       return (
@@ -163,21 +163,22 @@ class InfirmierList extends Component {
                        <div>
                        {console.log(this.props.date)}
                            <h1>Trouver un ou une infirmière</h1>
-                           <p className="rechercheinfimières">Vous cherchez un(e) infirmièr(e) à domicile de confiance? AlloFermli(ya) a un large aperçu 
+                           <p className="rechercheinfimières">Vous cherchez un(e) infirmièr(e) à domicile de confiance? AlloFermly(a) a un large aperçu 
                                des différents infirmièrs, avec 21.278 infirmièr(e)s disponibles pour vos critères de recherche. 
                                Commencez à contacter nos infirmièrs maintenant pour trouver un(e) infirmièr(e) adéquate en un rien de temps!</p>
                                <label className="label headerbtn">  <Link className=" linktoinscrire" to='/Components/Inscrire'>Vous n'avez pas de compte? Inscrivez-vous!</Link></label>
                {contact.filter((el,i)=>{ 
   
-  return(el.gouvernorat.toLowerCase().includes(value1.toLowerCase()))}).map((el,i)=>{
+  return(el.gouvernorat.toLowerCase().startsWith(value1.toLowerCase()))}).map((el,i)=>{console.log(el.jours)
    return <ListItem key={i} photoprofil={el.photoprofil} Prénom={el.Prénom} Nom={el.Nom} sexe={el.sexe} Mail={el.Mail} ville={el.ville} 
                        gouvernorat={el.gouvernorat} date={el.date} experience={el.experience} taux={el.taux} 
-                       disponibilite={el.jours}/>
+                       jours={el.jours}/>
        
 
   })
 
   }
+  {console.log(this.props.jours)}
   {console.log(this.props.sexe)}
   <div>
   

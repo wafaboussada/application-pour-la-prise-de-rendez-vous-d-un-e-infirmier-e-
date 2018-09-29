@@ -51,10 +51,10 @@ class Search extends Component {
                 </div>
                 <ul className="list-of-ville" >{
                      this.props.tabVilles.filter(x=>{
-                     return this.props.value.trim() && x.toLowerCase().includes(this.props.value.toLowerCase())
-                     }).map(x=>{ console.log(x.value)
+                     return this.props.value.trim() && x.toLowerCase().startsWith(this.props.value.toLowerCase())
+                     }).map(x=>{ 
                         // return <label><input type="checkbox" className="Ville-select" />{x}</label>
-                     return <li className="Ville-select" >{x}</li>     //<Link className="dropdown-item" to='/Components/InfirmierList'><li className="Ville-select" ></li></Link>
+                     return <Link to='/Components/InfirmierList'><li className="Ville-select" >{x}</li> </Link>    //<Link className="dropdown-item" to='/Components/InfirmierList'><li className="Ville-select" ></li></Link>
                      })
                     }
                     </ul>
@@ -62,7 +62,7 @@ class Search extends Component {
                 <div className="inscription-gratuite">
                    <div className='box'>
                       <h2>Vous cherchez un job d'infermier(e) ?</h2>
-                      <button className="btn">Inscription gratuite</button></div>
+                      <Link to='/Components/Inscrire'><button className="btn">Inscription gratuite</button></Link></div>
                    </div>
                  </div>
               </div>

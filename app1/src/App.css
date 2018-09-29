@@ -199,6 +199,8 @@ h2{
                   padding: 50px 100px;
                   height: 350px;
                   justify-content: space-between;
+                  position: relative;
+                  bottom:60px;
                 }
                 .maps-img{
                   width:50%;
@@ -738,6 +740,10 @@ iconservicesclients{
   font-size: 40px;
   text-align:center;
 }
+.servicescomponent{
+  position: relative;
+  bottom:70px;
+}
 /******************************Footer.js********************************/
 .terms-of-service{
   font-family: Arial, Helvetica, sans-serif;
@@ -828,6 +834,8 @@ text-decoration:none;
 }
 .body-services{
   height:300px;
+  position: relative;
+  bottom:80px;
 }
 .title-services{
   font-size:30px;

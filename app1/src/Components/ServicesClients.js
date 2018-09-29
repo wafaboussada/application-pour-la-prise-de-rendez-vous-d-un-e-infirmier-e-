@@ -41,7 +41,7 @@ import React, { Component } from 'react';
 class ServicesClients extends Component {
     render() {
         return (
-            <div>
+            <div className="servicescomponent">
                <h2 className='servicesTitle'>Vous aider rapidement à trouver un(e) infirmièr(e) près de chez vous </h2>
                <div className='services'>
                    <div className='service'>
